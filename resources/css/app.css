@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Nunito', sans-serif;
+    @apply text-lg text-gray-500 relative min-h-screen;
+}
+
+@layer components {
+    .my-container {
+        @apply container px-10 mx-auto
+    }
+
+    .btn {
+        @apply py-3 px-7 rounded shadow-md transition-shadow
+    }
+    .btn:hover {
+        @apply shadow-xl;
+    }
+    .btn-white {
+        @apply bg-white text-gray-700
+    }
+    .btn-primary {
+        @apply bg-yellow-400 text-white
+    }
+
+    .separate {
+        @apply flex justify-between items-center
+    }
+
+    .divider {
+        @apply w-full bg-gray-200;
+        height: 1px;
+    }
+
+    .text-heading{
+        @apply text-gray-700 text-4xl font-bold;
+    }
+
+    .input{
+        @apply w-full border-2 py-2 px-4 rounded;
+        border-width: 1px;
+        outline: none;
+    }
+    .input:focus{
+        @apply border-yellow-400;
+    }
+}
