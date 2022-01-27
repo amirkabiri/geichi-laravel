@@ -13,10 +13,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('style')
 </head>
-<body class="@yield('body-class', 'pb-10')">
+<body class="@yield('body-class', 'pb-16 sm:pb-10')">
     <div class="bg-yellow-400 py-2 text-white shadow-lg z-20 relative">
-        <div class="my-container separate">
-            <a href="{{url('/')}}" class="font-black text-5xl">Geichi</a>
+        <div class="my-container flex flex-row justify-between items-center">
+            <a href="{{url('/')}}" class="font-black text-4xl sm:text-5xl">Geichi</a>
             <a href="{{ route('shops.create') }}" class="btn btn-white">Register Barbershop</a>
         </div>
     </div>
@@ -27,12 +27,12 @@
 
     @section('footer')
         <footer class="w-100 text-white py-4 bg-neutral-700 absolute w-full" style="bottom: 0;">
-            <div class="my-container separate">
+            <div class="my-container flex flex-col sm:flex-row justify-between items-center">
                 <div>
                     Created By <a class="font-bold text-yellow-400 text-lg" href="https://akdev.ir">Amir Kabiri</a>
                 </div>
                 <div>
-                    All rights received
+                    <a href="https://github.com/amirkabiri/geichi-laravel" class="text-yellow-400">Github Repository</a>
                 </div>
             </div>
         </footer>

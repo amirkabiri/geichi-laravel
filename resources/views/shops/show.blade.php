@@ -26,7 +26,7 @@
                 @endforeach
             </ul>
         </div>
-        <div>
+        <div class="mt-10 sm:mt-0">
             <h3 class="text-heading">Are you a barber in this barbershop?</h3>
             <p>so do not hesitate to register your information here !</p>
             <form action="{{ route('shops.barbers.store', ['shop' => $shop->id]) }}" method="post" enctype="multipart/form-data">

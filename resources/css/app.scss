@@ -4,12 +4,12 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    @apply text-lg text-gray-500 relative min-h-screen;
+    @apply text-sm sm:text-lg text-gray-500 relative min-h-screen;
 }
 
 @layer components {
     .my-container {
-        @apply container px-10 mx-auto
+        @apply container px-2 sm:px-10 mx-auto
     }
 
     .btn {
@@ -35,7 +35,7 @@ body {
     }
 
     .text-heading{
-        @apply text-gray-700 text-4xl font-bold;
+        @apply text-gray-700 text-2xl sm:text-4xl font-bold;
     }
 
     .input{
